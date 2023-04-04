@@ -1,0 +1,36 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    max-width: 800px;
+    height: auto;
+    box-sizing: content-box;
+    /* scrollbar-width: none;
+    -ms-overflow-style: none; */
+    
+}
+
+.home-header {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+.home-post-feed-container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--main-border-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+/* .home-post-feed-container::-webkit-scrollbar {
+    display: none;
+} */
+.home-post-feed-container label {
+    font-family: inherit;
+  }

@@ -1,0 +1,37 @@
+.side-nav {
+
+    transition: width 0.3s ease-in-out;
+    height: 100vh;
+    padding-top: 28px;
+    margin-left: 30px;
+    
+}
+.side-nav-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    cursor: pointer;
+    color: white;
+    
+    
+    text-decoration: none;
+    overflow: hidden;
+}
+.side-nav-item svg{
+    display: flex;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.side-nav-title{
+    font-size: 1.2rem;
+}
+.side-nav-closed {
+    transition: width 0.3s ease-in-out;
+    width: 80px;
+    margin-left: 30px;
+}
+.side-nav-closed .side-nav-title {
+    display: none;
+}

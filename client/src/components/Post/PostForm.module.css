@@ -1,0 +1,126 @@
+.post-form-container{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    min-width: 400px;
+    max-width: 800px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    
+    
+}
+.post-form-header{
+    display: flex;
+
+}
+.post-form-main {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row;
+    /* height: fit-content; */
+}
+.post-form-avatar{
+    flex: .2;
+    align-items: flex-start;
+
+}
+.post-form-input{
+    flex: .7;
+    box-sizing: content-box;
+    width: 100%;
+    overflow: hidden;
+    /* border: 1px solid #e0e0e0; */
+}
+.post-form-input form {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    /* width: 100%;
+    height: 100%; */
+    max-width: 700px;
+    overflow: hidden;
+}
+.post-form-input  textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    text-align: initial;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+}
+.post-form-input  textarea:focus {
+    min-height: 100px;
+}
+.post-form-image-preview{
+    /* width: 500px;
+    height: 300px; */
+    margin-top: 10px;
+    border-radius: 0%;
+}
+.post-form-image-preview img{
+    width: 500px;
+    height: 300px;
+    border-radius: 0%;
+}
+.post-form-image-remove-button{
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+.post-form-footer {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+.post-form-media-container{
+    display: flex;
+    flex: .8;
+
+}
+.post-form-file{
+    display:none;
+
+}
+
+.post-form-input svg{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    cursor: pointer;
+    /* color: darkcyan; */
+    color:#2a9d8f;
+}
+
+.post-form-button-container{
+    flex: .2;
+
+}
+
+.post-form-button {
+    background-color: #2a9d8f;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
