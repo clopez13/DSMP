@@ -19,7 +19,7 @@ export default function PostForm(props) {
     const [selectedImage, setSelectedImage] = useState('');
     const [imagePreview, setImagePreview] = useState('');
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, watch,reset, formState: { errors } } = useForm();
     const onSubmit = async (data) => {
         try {
             const postData = {
@@ -30,12 +30,11 @@ export default function PostForm(props) {
             };
             const response = await PostService.create(postData);
             console.log(response.data);
+            reset();
         } catch (error) {
             console.log(error);
         }
     };
-
-
 
     const handleInputChange = (event) => {
         event.target.style.height = 'auto';

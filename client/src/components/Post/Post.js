@@ -4,12 +4,12 @@ import {SAMPLE_AVATAR, POST_COMMENTS, POST_FAVORITE,POST_SHARE} from '../../icon
 
 export default function Post(
     {
-        imgSource,
-        imgAlt,
-        postText,
-        username,
-        profileName,
-        date
+        imgsource,
+        imgalt,
+        posttext,
+        profileusername,
+        profilename,
+        createdAt
       }
 ) {
     const [shares, setShares] = useState(0);
@@ -18,18 +18,20 @@ export default function Post(
 
     return (
             <div className={styles['post-container']}>
-              <img src={imgSource} alt={imgAlt} />
+              <img src={imgsource} alt={imgalt} />
               <div className={styles['post-content']}>
                 <div className={styles['post-header']}>
                   <div className= {styles['post-username']}>
-                    <h1>{profileName}</h1>
+                    <h1>{profilename}</h1>
                   </div>
-                  <p className={styles['post-gray']}>{username}</p>
+                  <p className={styles['post-gray']}>{profileusername}</p>
                 
-                  <p className={styles['post-gray']}> {date}</p>
+                  <p className={styles['post-gray']}> {createdAt}</p>
                   
                 </div>
-                <p>{postText}</p>
+                <div className={styles['post-body']}>
+                <p>{posttext}</p>
+                </div>
                 <div className={styles['post-interactions']}>
                 <div className={styles['post-interaction']}>
                     {POST_COMMENTS}
